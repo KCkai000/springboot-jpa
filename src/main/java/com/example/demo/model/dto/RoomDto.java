@@ -23,7 +23,7 @@ public class RoomDto {
 	@Size(min = 2, message ="{roomDto.roomName.size}")	
 	private String roomName;
 	
-	@NotNull(message = "{roomDto.roomId.notNull}")
+	@NotNull(message = "{roomDto.roomSize.notNull}")
 	@Range(min = 1, max = 500, message ="{roomDto.roomId.range}")
 	private Integer roomSize;
 }
